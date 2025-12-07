@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix clone</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <!-- header start -->
+  <header id="header">
+    <div class="header-cont container">
+      <div class="left-cont">
+        <img class="header-brand" src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456" alt="Brand">
+
+        <ul class="main-nav">
+          <li class="nav-item active">Home</li>
+          <li class="nav-item">Tv Shows</li>
+          <li class="nav-item">Movies</li>
+          <li class="nav-item">News &amp; Popular</li>
+          <li class="nav-item">My List</li>
+          <li class="nav-item">Browse by Languages</li>
+        </ul>
+
+        <!-- moved auth controls to left -->
+        <div class="nav_item">
+          <button class="sign_in_button">Sign In</button>
+
+          <div class="email-wrap">
+            <input type="email" placeholder="Email Address" class="email" id="emailInput">
+            <button class="get_started" id="getStartedBtn">Get Started &gt;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-cont">
+        <!-- kept icons at right -->
+        <button class="icon-btn" title="Search" aria-label="Search">🔍</button>
+        <button class="icon-btn" title="Notifications" aria-label="Notifications">🔔</button>
+
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- banner section -->
+  <div class="banner-section" id="banner-section">
+    <div class="banner_fadeBottom"></div>
+  </div>
+  <!-- banner section end -->
+
+  <!-- movies sections -->
+  <div class="movies-cont container" id="movies-cont"></div>
+
+  <!-- footer (optional) -->
+  <footer class="site-footer container">
+    <small>&copy; <span id="year"></span> Netflix clone</small>
+  </footer>
+</body>
+</html>
